@@ -27,10 +27,10 @@ const Home = () => {
       {/* Hero----area--------------------------------------- */}
       <div className="max-w-[1170px] mx-auto xl:px-0 px-4 my-[130px] grid lg:grid-cols-2 gap-7">
         <div className="">
-          <h1>
+          <h3>
             I run agency smartly with
             <br /> my team members.
-          </h1>
+          </h3>
           <p className="mt-8 text-[#767676]">
             Hi, my name is David Clacrk and I began using WordPress when <br />
             first began. I’ve spent most of my waking hours for the last ten{" "}
@@ -40,40 +40,40 @@ const Home = () => {
           <div className="flex gap-7 mt-8">
             <div className="flex flex-col gap-3 justify-center  w-[170px] h-[220px] bg-[#f4f4f4] pl-11">
               <Image src={flower} alt="flower" />
-              <h2 className="text-xl font-bold text-[#1b1b1b]">14+</h2>
+              <h4 className="text-xl font-bold text-[#1b1b1b]">14+</h4>
               <p>
                 Years of <br />
                 Experience
               </p>
             </div>
             <div>
-              <h2 className="text-xl font-bold tracking-[0px]">
+              <h4 className="text-xl font-bold tracking-[0px]">
                 01. What I do
-              </h2>
+              </h4>
               <div className="flex gap-4 items-center mt-2">
                 <MdOutlineCheckCircle size={20} color="#7ebbf2" />
-                <h2 className="text-lg font-normal text-[#767676]">
+                <h4 className="text-lg font-normal text-[#767676]">
                   Always give high quality
-                </h2>
+                </h4>
               </div>
               <div className="flex gap-4 items-center mt-3">
                 <MdOutlineCheckCircle size={20} color="#7ebbf2" />
-                <h2 className="text-lg font-normal text-[#767676]">
+                <h4 className="text-lg font-normal text-[#767676]">
                   Care about design trendecy
-                </h2>
+                </h4>
               </div>
-              <h2 className="text-xl font-semibold mt-3">02. Note my info</h2>
+              <h4 className="text-xl font-semibold mt-3">02. Note my info</h4>
               <div className="flex gap-4 items-center mt-2">
                 <MdEmail size={20} color="#7ebbf2" />
-                <h2 className="text-lg font-normal text-[#767676]">
+                <h4 className="text-lg font-normal text-[#767676]">
                   needhelponthi@gmail.com
-                </h2>
+                </h4>
               </div>
               <div className="flex gap-4 items-center mt-3">
                 <GrMap size={20} color="#7ebbf2" />
-                <h2 className="text-lg font-normal text-[#767676]">
+                <h4 className="text-lg font-normal text-[#767676]">
                   Berlyin main street. Germany
-                </h2>
+                </h4>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ const Home = () => {
       <section>
         <div className="max-w-[1170px] mx-auto xl:px-0 px-3 grid lg:grid-cols-2 mt-28">
           <div className="space-y-12">
-            <h1 className="lg:text-left text-center">Experience & tools</h1>
+            <h3 className="lg:text-left text-center">Experience & tools</h3>
             <div className="flex flex-wrap gap-3 ">
               <Button title="Figma" />
               <Button title="Principle" />
@@ -155,9 +155,9 @@ const Home = () => {
 
       <section>
         <div className="mt-28 max-w-[1170px] mx-auto xl:px-0 px-3">
-          <h1 className="text-center sm:text-[40px] text-[25px]  mb-14">
+          <h3 className="text-center sm:text-[40px] text-[25px]  mb-14">
             My awards achivement
-          </h1>
+          </h3>
           <div className=" grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-7">
             <Award img={best} title="Developer Award" type="Winner" />
             <Award img={developer} title="Developer Award" type="Nominee" />
@@ -172,9 +172,9 @@ const Home = () => {
         <div className="bg-[#f6f6f7] mt-28">
           <div className="max-w-[1170px] mx-auto xl:px-0 px-3 py-28">
             <p className="text-[#767676]">My Service</p>
-            <h1 class="mt-4 relative w-fit after:content-[''] after:absolute after:w-[166px] after:h-[27px] after:right-28 md:after:-right-14 after:top-16 md:after:top-8 after:bg-line after:bg-no-repeat after:bg-contain ">
-              Check my service
-            </h1>
+            <h3 class="mt-4 relative w-fit after:content-[''] after:absolute after:w-[170px] after:h-8 after:-right-14 after:top-6 after:bg-[url('/img/line.png')] after:bg-no-repeat after:bg-contain ">
+              Check my services
+            </h3>
           </div>
         </div>
       </section>
