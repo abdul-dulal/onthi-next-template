@@ -23,9 +23,9 @@ import Award from "@/components/ui/Award";
 const Home = () => {
   return (
     <div className="">
-      {/* <Creative /> */}
+      <Creative />
       {/* Hero----area--------------------------------------- */}
-      {/* <div className="max-w-[1170px] mx-auto xl:px-0 px-4 my-[130px] grid lg:grid-cols-2 gap-7">
+      <div className="max-w-[1170px] mx-auto xl:px-0 px-4 my-[130px] grid lg:grid-cols-2 gap-7">
         <div className="">
           <h1>
             I run agency smartly with
@@ -103,7 +103,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Exprience-area-------------------------------- */}
 
