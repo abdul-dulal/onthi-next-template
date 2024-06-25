@@ -1,7 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
-const Home = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+const Main = () => {
+  return (
+    <div>
+      <h1>hello world</h1>
+    </div>
+  );
 };
 
-export default Home;
+export default Main;

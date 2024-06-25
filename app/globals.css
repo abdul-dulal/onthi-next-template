@@ -1,3 +1,207 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@layer base {
+  p {
+    @apply xl:text-lg lg:text-base  font-normal leading-[25px];
+  }
+  h1 {
+    @apply xl:text-[40px] lg:text-[34px] sm:text-[40px] text-[30px] leading-[48px] tracking-[-1px] font-bold text-[#1b1b1b];
+  }
+}
+
+html {
+  font-family: syne;
+}
+
+h3,
+h2 {
+  font-family: myriadPro;
+}
+/* header start--------------------------------------- */
+.brand {
+  transform: translateX(-100rem);
+  animation: slideIn 0.5s forwards;
+}
+.header {
+  position: relative;
+  width: 100%;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: fadeInDown 0.95s ease-in-out 0s normal none 1 running;
+  z-index: 9;
+  transition: all 0.7s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav ul li {
+  transform: translateX(100rem);
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* header end-------------------------------------------------- */
+
+.circle {
+  animation: rounded 14s linear infinite;
+}
+
+@keyframes rounded {
+  100% {
+    rotate: 100deg;
+  }
+}
+
+.card {
+  animation: MoveLeftRight 2s linear infinite alternate;
+}
+
+@keyframes MoveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+.topbar-shape {
+  animation: tada 5s alternate infinite;
+}
+@keyframes tada {
+  0%,
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+}
+
+/* button */
+
+.btn:after {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #3b71fe;
+  content: "";
+  z-index: -111;
+  transition: all 0.6s ease-out;
+  color: white;
+}
+.btn:hover:after {
+  width: 100%;
+  transition: all 0.6s ease-out;
+  color: white;
+  border: none;
+}
+.underline-red {
+  text-decoration-color: red;
+}
+/* Hero_Start-------------------------------- */
+.content::before {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  background-image: url("/img/wave.png");
+  background-repeat: no-repeat;
+  animation: MoveUpDown 2s linear infinite alternate;
+}
+
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
+.exprience {
+  animation: rotateText 10s linear infinite;
+}
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Hero_End-------------------------------- */
+
+/* Award-section-Start---------------------------------- */
+.award::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #77b1e5;
+  opacity: 0;
+  z-index: -9;
+  transition: 0.7s;
+  transform: scale(0);
+}
+.award:hover::after {
+  opacity: 0.8;
+  transform: scale(1);
+}
+/* Award-section-End---------------------------------- */
+
+/* Service-section-Start */
+
+.bg-line {
+  background-image: url("/img/line.png");
+}
+/* Service-section-End */
