@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import CircleType from "circletype";
 import arrow from "@/public/img/highlight.png";
 import singtunare from "@/public/img/signature.png";
-
+import designer from "/public/img/desinger.png";
 import { FaAnglesRight } from "react-icons/fa6";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -21,19 +21,14 @@ const Creative = () => {
       <div className="container xl:h-[650px] lg:h-[400px] md:h-[580px] mx-auto sm:grid grid-cols-12  gap-7">
         <div className="col-span-5">
           <div
-            className="women w-full h-full relative xl:-left-[78px] lg:-left-4 bg-contain bg-no-repeat "
+            className="women w-full h-full relative xl:-left-[75px] lg:-left-4 bg-contain bg-no-repeat "
             style={{
               backgroundImage: 'url("/img/women.png")',
             }}
           >
             <div className="h-full flex flex-col  justify-between">
-              <div className="h-[200px] w-[200px]">
-                <div
-                  ref={textRef}
-                  className="circle-text circle  uppercase text-sm font-bold text-[#a4a4a4]"
-                >
-                  ________senior graphic designer
-                </div>
+              <div className=" w-[140px] h-[150px] circle">
+                <Image src={designer} alt="Senior graphic designer" />
               </div>
               <div className=" flex gap-10  items-center relative -left-12 bottom-11">
                 <div className="card bg-white w-[200px]  rounded-lg drop-shadow-lg">

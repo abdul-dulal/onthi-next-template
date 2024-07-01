@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={` ${syne.className}  `}>
       <body>
-        <Header />
+        {/* <Header /> */}
         <div className="">{children}</div>
       </body>
     </html>

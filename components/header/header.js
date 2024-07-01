@@ -1,18 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { SlSocialPintarest } from "react-icons/sl";
-import SubHeader from "./SubHeader";
+import Drawer from "../ui/Drawer";
 
 const Header = () => {
-  const pathname = usePathname();
-  const activeStyle = "text-white border-b-[2.5px] pt-[6px] border-[#7ebbf2]";
-
   const [isSticky, setIsSticky] = useState(false);
-
+  const [isOpen, setIsOpen] = useState(false);
   const handleScroll = () => {
     if (window.scrollY > 10) {
       setIsSticky(true);
@@ -27,9 +23,15 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const header =
+    "absolute after:content-[''] after:bottom-0 after:left-0  after:w-full after:h-[2px] after:origin-left	 after:scale-x-0 after:transition-all hover:after:scale-x-100";
   return (
-    <header className={`header ${isSticky ? "sticky" : ""}`}>
-      <div className="drop-shadow-xl bg-[#1c1c1c] h-[110px]">
+    <header className={`header   ${isSticky ? "sticky" : ""}`}>
+      <div
+        className={`bg-[#1c1c1c] h-[110px] ${
+          isOpen ? "shadow-lg" : "drop-shadow-xl"
+        }`}
+      >
         <div className="xl:grid xl:grid-cols-12 flex justify-between gap-2 max-w-[1170px] mx-auto xl:px-0 px-4 h-full items-center z-[9999]">
           <div className="col-span-2 brand">
             <Link href={"/home"}>
@@ -42,59 +44,45 @@ const Header = () => {
             </Link>
           </div>
           <div className="  col-span-8 pl-[70px]">
-            <nav>
-              <ul className="xl:flex hidden    gap-[55px]   text-[#8ea0b1] font-medium text-base">
-                <li style={{ animationDelay: "0s" }}>
-                  <Link
-                    className={` ${pathname === "/home" ? activeStyle : ""}`}
-                    href={"/home"}
-                  >
+            <nav className="">
+              <ul className=" xl:flex hidden gap-[55px]   text-[#8ea0b1] font-medium text-base">
+                <li
+                  style={{ animationDelay: "0s" }}
+                  className="hover:text-white duration-[.3s]"
+                >
+                  <Link href="#" id="home">
                     Home
                   </Link>
                 </li>
-                <li style={{ animationDelay: ".5s" }}>
-                  <Link
-                    className={` ${pathname === "/about" ? activeStyle : ""}`}
-                    href={"/about"}
-                  >
-                    About Me
-                  </Link>
+                <li
+                  style={{ animationDelay: ".5s" }}
+                  className="hover:text-white duration-[.3s]"
+                >
+                  <Link href="#">About Me</Link>
                 </li>
-                <li style={{ animationDelay: "1s" }}>
-                  <Link
-                    className={` ${
-                      pathname === "/services" ? activeStyle : ""
-                    }`}
-                    href={"/services"}
-                  >
-                    Services
-                  </Link>
+                <li
+                  style={{ animationDelay: "1s" }}
+                  className="hover:text-white duration-[.3s]"
+                >
+                  <Link href="#">Services</Link>
                 </li>
-                <li style={{ animationDelay: "1.5s" }}>
-                  <Link
-                    className={` ${
-                      pathname === "/portfolio" ? activeStyle : ""
-                    }`}
-                    href={"/portfolio"}
-                  >
-                    Portfolio
-                  </Link>
+                <li
+                  style={{ animationDelay: "1.5s" }}
+                  className="hover:text-white duration-[.3s]"
+                >
+                  <Link href="#">Portfolio</Link>
                 </li>
-                <li style={{ animationDelay: "2s" }}>
-                  <Link
-                    className={` ${pathname === "/reviews" ? activeStyle : ""}`}
-                    href={"/reviews"}
-                  >
-                    Reviews
-                  </Link>
+                <li
+                  style={{ animationDelay: "2s" }}
+                  className="hover:text-white duration-[.3s]"
+                >
+                  <Link href="#">Reviews</Link>
                 </li>
-                <li style={{ animationDelay: "2.5s" }}>
-                  <Link
-                    className={` ${pathname === "/blog" ? activeStyle : ""}`}
-                    href={"/blog"}
-                  >
-                    Blog
-                  </Link>
+                <li
+                  style={{ animationDelay: "2.5s" }}
+                  className="hover:text-white duration-[.3s]"
+                >
+                  <Link href="#">Blog</Link>
                 </li>
               </ul>
             </nav>
@@ -115,7 +103,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <SubHeader />
+          <Drawer setIsOpen={setIsOpen} isOpen={isOpen} />
         </div>
       </div>
     </header>
