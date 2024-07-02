@@ -21,7 +21,8 @@ html {
 }
 
 h4,
-h5 {
+h5,
+span {
   font-family: myriadPro;
 }
 /* header start--------------------------------------- */
@@ -342,4 +343,8 @@ nav ul li {
 
 .swiper-pagination-bullet-active {
   color: red;
+}
+
+.transition-outline {
+  transition: outline-color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
 }

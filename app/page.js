@@ -27,7 +27,7 @@ import Drawer from "@/components/ui/Drawer";
 import designer from "/public/img/desinger.png";
 import { FaAnglesRight } from "react-icons/fa6";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import arrow from "@/public/img/highlight.png";
 import singtunare from "@/public/img/signature.png";
 import digitalMarketing from "/public/img/digitalMarketing.png";
@@ -37,8 +37,20 @@ import productDesign from "/public/img/product-design.png";
 import Link from "next/link";
 import Service from "@/components/ui/Service";
 import Slider from "@/components/ui/Slider";
-
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
+import Social from "@/components/ui/Social";
+import twiter from "/public/img/twiter.png";
+import instagram from "/public/img/Instagram.png";
+import dribble from "/public/img/dribble.png";
+import device from "/public/img/device.png";
+import ContactForm from "@/components/ui/ContactForm";
+import blog1 from "/public/img/blog-post.png";
+import blog2 from "/public/img/blog-post2.png";
+import xlogo from "/public/img/xlogo.png";
+import { FaArrowUpLong } from "react-icons/fa6";
 const Home = () => {
+  const [counterOn, setCounteron] = useState(false);
   return (
     <div>
       <div className="w-full bg-primary   md:bg-[url('/img/bg-main.png')] bg-none bg-no-repeat bg-right-bottom ">
@@ -57,8 +69,27 @@ const Home = () => {
                 <div className=" md:flex hidden gap-10  items-center relative  -bottom-28">
                   <div className="card bg-white lg:w-[200px] w-[150px]  rounded-lg drop-shadow-lg">
                     <div className="lg:p-6 p-3">
-                      <h3 className="text-2xl font-bold flex items-center ">
-                        10k+
+                      <h3 className=" ">
+                        <ScrollTrigger
+                          onEnter={() => setCounteron(true)}
+                          onExit={() => setCounteron(false)}
+                        >
+                          {counterOn && (
+                            <CountUp start={0} end={10} duration={4} delay={0}>
+                              {({ countUpRef }) => (
+                                <div className="flex">
+                                  <span
+                                    className="text-[26px] font-bold flex items-center"
+                                    ref={countUpRef}
+                                  />
+                                  <h3 className="text-[26px]  font-bold flex items-center ">
+                                    k+
+                                  </h3>
+                                </div>
+                              )}
+                            </CountUp>
+                          )}
+                        </ScrollTrigger>
                       </h3>
                       <h3 className="text-[#1b1b1b] text-[20px] font-normal">
                         Real Customers
@@ -314,7 +345,7 @@ const Home = () => {
 
       {/* Service-Section */}
       <section>
-        <div className="bg-[#f6f6f7] mt-28 bg-[url('/img/service-bg.png')] bg-transparent bg-no-repeat">
+        <div className="bg-[#f6f6f7] mt-28 ">
           <div className="w-[1170px] mx-auto xl:px-0 px-3 py-28">
             <p className="text-[#767676]">My Service</p>
             <h3 class="mt-4 mb-10 relative w-fit after:content-[''] after:absolute after:w-[170px] after:h-8 after:-right-14 after:top-6 after:bg-[url('/img/line.png')] after:bg-no-repeat after:bg-contain ">
@@ -333,7 +364,7 @@ const Home = () => {
       </section>
 
       {/* Portfolio-Section */}
-      <div className="max-w-[1290px] mx-auto xl:px-0 px-3 mt-16">
+      <div className="max-w-[1290px] w-full mx-auto xl:px-0 px-3 mt-16">
         <p className="text-center">My portfolio</p>
         <div className="flex justify-center w-full">
           <h3 class="text-center mt-4 mb-10 relative w-fit after:content-[''] after:absolute after:w-[170px] after:h-8 after:-right-14 after:top-6 after:bg-[url('/img/line.png')] after:bg-no-repeat after:bg-contain ">
@@ -354,6 +385,110 @@ const Home = () => {
           <Slider />
         </div>
       </div>
+      {/* Contact-section */}
+      <section>
+        <div className="max-w-[1350px] xl:px-0 px-3 w-full bg-[#f6f6f7] pt-28">
+          <div className="max-w-[1170px] mx-auto ">
+            <h3 className="md:text-left text-center">
+              That’s it! Now it’s your turn <br />
+              to say hi.
+            </h3>
+            <div className="grid sm:grid-cols-12 gap-7 ">
+              <div className="md:col-span-4 col-span-12  md:pl-0 sm:pl-24  xs:pl-14">
+                <Social
+                  social={twiter}
+                  socialName="Twiter"
+                  title=" Most controversial place"
+                />
+                <Social
+                  social={instagram}
+                  socialName="Instagram"
+                  title="Most lavable place"
+                />
+                <Social
+                  social={dribble}
+                  socialName="Dribble"
+                  title="All designer can visit this regularly"
+                />
+                <Image src={device} className="mt-16" alt="Smart device" />
+              </div>
+              <div className="md:col-span-8 col-span-12 ">
+                <ContactForm label="Name" type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Blog-sectin */}
+      <div className="max-w-[1170px] mx-auto xl:px-0 px-3 mt-20">
+        <p className="text-center">Blog & articles</p>
+        <h3 className="text-center mb-10">Latest blog post</h3>
+        <div className="grid xs:grid-cols-2 gap-7  ">
+          <Link href="#" className="group">
+            <div className="">
+              <Image
+                src={blog1}
+                className=" group-hover:scale-95 duration-500 group-hover:rounded"
+                alt="blog post"
+              />
+            </div>
+            <p>April 6. 2023 _ Website development</p>
+            <h3 className="md:text-[28px] sm:text-2xl xs:text-xl ">
+              A Fresh beginging of website
+            </h3>
+          </Link>
+          <Link href="#" className="group">
+            <Image
+              src={blog2}
+              className=" group-hover:scale-95 duration-500 group-hover:rounded"
+              alt="blog post"
+            />
+            <p>April 6. 2023 _ Website development</p>
+            <h3 className="md:text-[28px] sm:text-2xl xs:text-xl">
+              Mobil billing for digital goods
+            </h3>
+          </Link>
+        </div>
+      </div>
+      {/* Footer-section */}
+      <footer>
+        <div className="max-w-[1350px] w-full bg-[url('/img/footer-bg.png')] bg-primary pt-20 pb-10 mt-20">
+          <div className="max-w-[1170px] mx-auto xl:px-0 px-3">
+            <div className="xs:flex justify-between">
+              <h3 className="text-white xs:mb-0 mb-4">Let’s get in touch</h3>
+              <div className="flex ">
+                <input
+                  type="email"
+                  className="lg:w-[370px] md:w-[300px] sm:w-[240px] xs:w-[200px] h-12 border border-white bg-transparent"
+                />
+                <button className="bg-secondary lg:w-[200px] md:w-[180px] sm:w-[140px] xs:w-[100px] w-24 h-12 text-sm font-bold">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+            <div className="mt-20">
+              <h1 className="sm:text-[80px] xs:text-[50px] text-3xl text-secondary font-bold text-center">
+                hello@onthi.com
+              </h1>
+              <p className="text-center text-white text-xl">
+                nss.com established 2014 in Sordar para{" "}
+              </p>
+              <Image src={xlogo} className="mx-auto mt-10 mb-20" alt="logo" />
+              <div className="flex justify-between">
+                <ul className="flex text-white xs:gap-8 gap-4 cursor-pointer">
+                  <li>About</li>
+                  <li>Portfolio</li>
+                  <li>Service</li>
+                  <li>Contact</li>
+                </ul>
+                <div className="w-8 h-8 bg-[#292929] rounded-full flex items-center justify-center shadow-md animate-bounce">
+                  <FaArrowUpLong color="white" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
