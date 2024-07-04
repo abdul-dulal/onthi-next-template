@@ -17,6 +17,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-family: syne;
 }
 
@@ -25,6 +26,7 @@ h5,
 span {
   font-family: myriadPro;
 }
+
 /* header start--------------------------------------- */
 .brand {
   transform: translateX(-100rem);

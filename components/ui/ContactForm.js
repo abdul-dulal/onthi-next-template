@@ -28,7 +28,7 @@ const ContactForm = () => {
 
         <input
           type="submit"
-          className="w-[244px] h-[58px] bg-secondary text-lg font-bold text-primary mt-8"
+          className="w-[244px] h-[58px] bg-secondary text-lg font-bold text-primary mt-8 cursor-pointer"
           value="send message"
         />
       </form>

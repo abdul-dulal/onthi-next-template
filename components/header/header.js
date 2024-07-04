@@ -23,6 +23,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const header =
     "absolute after:content-[''] after:bottom-0 after:left-0  after:w-full after:h-[2px] after:origin-left	 after:scale-x-0 after:transition-all hover:after:scale-x-100";
   return (
@@ -50,7 +51,7 @@ const Header = () => {
                   style={{ animationDelay: "0s" }}
                   className="hover:text-white duration-[.3s]"
                 >
-                  <Link href="#" id="home">
+                  <Link href="#home" id="home">
                     Home
                   </Link>
                 </li>
@@ -58,31 +59,31 @@ const Header = () => {
                   style={{ animationDelay: ".5s" }}
                   className="hover:text-white duration-[.3s]"
                 >
-                  <Link href="#">About Me</Link>
+                  <Link href="#about">About Me</Link>
                 </li>
                 <li
                   style={{ animationDelay: "1s" }}
                   className="hover:text-white duration-[.3s]"
                 >
-                  <Link href="#">Services</Link>
+                  <Link href="#service">Services</Link>
                 </li>
                 <li
                   style={{ animationDelay: "1.5s" }}
                   className="hover:text-white duration-[.3s]"
                 >
-                  <Link href="#">Portfolio</Link>
+                  <Link href="#portfolio">Portfolio</Link>
                 </li>
                 <li
                   style={{ animationDelay: "2s" }}
                   className="hover:text-white duration-[.3s]"
                 >
-                  <Link href="#">Reviews</Link>
+                  <Link href="#review">Reviews</Link>
                 </li>
                 <li
                   style={{ animationDelay: "2.5s" }}
                   className="hover:text-white duration-[.3s]"
                 >
-                  <Link href="#">Blog</Link>
+                  <Link href="#blog">Blog</Link>
                 </li>
               </ul>
             </nav>
