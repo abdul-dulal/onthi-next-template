@@ -6,7 +6,7 @@ const Social = ({ social, socialName, title }) => {
     <div className="mt-12">
       <div className="flex items-center gap-7  ">
         <div>
-          <Image src={social} alt="Twiter" />
+          <Image src={social} alt="Twiter"></Image>
         </div>
         <div>
           <h6 className="text-lg font-bold text-primary">{socialName}</h6>

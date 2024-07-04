@@ -10,7 +10,7 @@ const Award = ({ img, title, type }) => {
           src={img}
           className="transition-transform duration-700 w-[120px] h-[75px] group-hover:transform group-hover:scale-125	"
           alt="Best-award"
-        />
+        ></Image>
         <h4 className="text-[#181818] text-lg font-semibold mt-12">{title}</h4>
         <h6 className="text-[#77b1e5] group-hover:text-black duration-500 text-base font-normal mt-3 mb-14">
           {type}

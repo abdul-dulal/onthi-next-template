@@ -20,7 +20,7 @@ const Project = ({ title, title1, hoverImg }) => {
         src={hoverImg}
         alt="Digital marketing"
         class="absolute scale-0  duration-500 transition-all w-[320px]   xl:right-0 lg:right-32 md:right-1/4 sm:right-[35%] xs:right-[46%] object-cover  group-hover:scale-[1] group-hover:rotate-40"
-      />
+      ></Image>
     </div>
   );
 };
