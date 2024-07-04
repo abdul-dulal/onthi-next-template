@@ -6,8 +6,7 @@ const InputField = ({ label, type, placeholder }) => {
       <label className="text-lg font-medium text-primary block">{label}</label>
       <input
         type={type}
-        name=""
-        id=""
+        name={type}
         placeholder={placeholder}
         class=" xl:w-[350px] w-full mt-5 mb-7 bg-white  pl-[30px]  h-[60px] border rounded transition-outline outline-none focus:outline-secondary "
       />

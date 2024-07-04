@@ -151,24 +151,21 @@ const Home = () => {
                 </p>
                 <div className="flex gap-2">
                   <Link href="#">
-                    <button
-                      hfre="#"
-                      className="flex items-center gap-2 xl:px-9 lg:px-7 xs:px-5  px-3 xl:py-5 lg:py-4 py-3 xs:text-lg text-base text-white text-[ #1b1b1b] font-bold  hover:bg-[#7dbbf1] hover:text-black duration-1000 rounded"
-                    >
+                    <h6 className="flex items-center gap-2 xl:px-9 lg:px-7 xs:px-5  px-3 xl:py-5 lg:py-4 py-3 xs:text-lg text-base text-white text-[ #1b1b1b] font-bold  hover:bg-[#7dbbf1] hover:text-black duration-1000 rounded">
                       About Me
                       <span className="">
                         <FaAnglesRight />
                       </span>
-                    </button>
+                    </h6>
                   </Link>
 
                   <Link href="#">
-                    <button
+                    <h6
                       className="underline underline-offset-4 xl:px-9 lg:px-7 xs:px-5 px-3 xl:py-5 lg:py-4 py-3 xs:text-lg text-base text-white text-[ #1b1b1b] font-bold    hover:bg-[#7dbbf1] hover:text-black duration-1000 rounded"
                       style={{ textDecorationColor: "#7ebbf2" }}
                     >
                       Available now
-                    </button>
+                    </h6>
                   </Link>
                 </div>
               </div>

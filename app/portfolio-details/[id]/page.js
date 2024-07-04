@@ -60,8 +60,8 @@ const PoftfolioDetails = ({ params }) => {
                 </li>
               </ul>
               <Link href="#">
-                <button className="xs:my-0 my-8 mt-8 xs:w-[222px] w-[190px] bg-[#3b71fe] text-[#1b1b1b]  h-[58px]   rounded text-lg font-bold">
-                  Download CV
+                <button className=" my-8 mt-8 xs:w-[200px] w-[190px] bg-[#3b71fe] text-[#1b1b1b]  h-[58px]   rounded text-lg font-bold">
+                  Visit more
                 </button>
               </Link>
             </div>
