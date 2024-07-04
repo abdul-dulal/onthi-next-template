@@ -51,9 +51,7 @@ const Header = () => {
                   style={{ animationDelay: "0s" }}
                   className="hover:text-white duration-[.3s]"
                 >
-                  <Link href="#home" id="home">
-                    Home
-                  </Link>
+                  <Link href="#home">Home</Link>
                 </li>
                 <li
                   style={{ animationDelay: ".5s" }}

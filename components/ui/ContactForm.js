@@ -20,7 +20,7 @@ const ContactForm = () => {
             Message
           </label>
           <textarea
-            name=""
+            name="message"
             id="message"
             className="h-[145px] xl:w-[730px] w-full bg-white  pl-[30px]  border rounded transition-outline outline-none focus:outline-secondary "
           ></textarea>

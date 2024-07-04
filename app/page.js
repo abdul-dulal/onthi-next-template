@@ -266,7 +266,7 @@ const Home = () => {
 
       {/* Exprience-area-------------------------------- */}
 
-      <section id="">
+      <section>
         <div className="max-w-[1170px] mx-auto xl:px-0 px-3 grid lg:grid-cols-2 mt-28">
           <div className="space-y-12">
             <h3 className="lg:text-left text-center">Experience & tools</h3>
