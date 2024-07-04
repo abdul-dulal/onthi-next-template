@@ -34,7 +34,7 @@ const PoftfolioDetails = ({ params }) => {
           <div className="my-14 w-8 h-8 bg-[#292929] rounded-full flex items-center justify-center shadow-md animate-bounce">
             <FaArrowDown color="white" />
           </div>
-          <Image src={portfolio} alt="Portfolio_Details" />
+          <Image src={portfolio} alt="Portfolio_Details"></Image>
         </div>
         <div className="xs:grid grid-cols-12 gap-7 mt-14">
           <div className="xs:col-span-4 flex-1 xs:text-left text-center">

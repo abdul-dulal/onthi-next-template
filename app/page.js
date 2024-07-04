@@ -58,7 +58,7 @@ const Home = () => {
               >
                 <div className="h-full flex flex-col  justify-around relative -top-8">
                   <div className="md:flex hidden lg:w-[140px] lg:h-[150px] md:w-28 md:h-28 relative left-10 lg:left-6 xl:top-0 lg:top-12 circle">
-                    <Image src={designer} alt="Senior graphic designer" />
+                    <Image src={designer} alt="Senior graphic designer"></Image>
                   </div>
                   <div className=" md:flex hidden gap-10  items-center relative  -bottom-28">
                     <div className="card bg-white lg:w-[200px] w-[150px]  rounded-lg drop-shadow-lg">
@@ -100,35 +100,35 @@ const Home = () => {
                             src={"/img/man1.png"}
                             height={36}
                             width={36}
-                            alt=""
-                          />
+                            alt="Customer"
+                          ></Image>
                           <Image
                             class="inline-block h-8 w-8 rounded-full ring-2 ring-white cursor-pointer"
                             src={"/img/man2.png"}
                             height={36}
                             width={36}
-                            alt=""
-                          />
+                            alt="Customer"
+                          ></Image>
                           <Image
                             class="inline-block h-8 w-8 rounded-full ring-2 ring-white cursor-pointer"
                             src={"/img/man3.png"}
                             height={36}
                             width={36}
-                            alt=""
-                          />
+                            alt="Customer"
+                          ></Image>
                           <Image
                             class="inline-block h-8 w-8 rounded-full ring-2 ring-white cursor-pointer"
                             src={"/img/man4.png"}
                             height={36}
                             width={36}
-                            alt=""
-                          />
+                            alt="Customer"
+                          ></Image>
                           <IoIosArrowRoundForward class="bg-[#7ebbf2] inline-block h-9 w-9 rounded-full cursor-pointer ring-white" />
                         </div>
                       </div>
                     </div>
                     <div className="">
-                      <Image src={singtunare} alt="" />
+                      <Image src={singtunare} alt="signature"></Image>
                     </div>
                   </div>
                 </div>
@@ -140,10 +140,10 @@ const Home = () => {
                   <p className="text-[#7ebbf2]">Hey ! I am Vapez miller</p>
                   <Image src={arrow} className="topbar-shape" alt="" />
                 </div>
-                <h1 className="xl:text-7xl lg:text-[55px] md:text-[48px] xs:text-5xl text-3xl  xl:leading-[80px] lg:leading-[60px] xs:leading-[50px] text-white tracking-[-2px] font-bold pb-4">
+                <h2 className="xl:text-7xl lg:text-[55px] md:text-[48px] xs:text-5xl text-3xl  xl:leading-[80px] lg:leading-[60px] xs:leading-[50px] text-white tracking-[-2px] font-bold pb-4">
                   Creative <br />
                   Web designer
-                </h1>
+                </h2>
                 <p className="text-[#8ea0b1] pb-4">
                   There are many variations of passages of Ipsum available,
                   majority <br />

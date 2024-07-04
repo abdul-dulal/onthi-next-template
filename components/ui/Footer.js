@@ -27,7 +27,11 @@ const Footer = () => {
               <p className="text-center text-white text-xl xs:mt-8 mt-3">
                 nss.com established 2014 in Sordar para
               </p>
-              <Image src={xlogo} className="mx-auto mt-10 mb-20" alt="logo" />
+              <Image
+                src={xlogo}
+                className="mx-auto mt-10 mb-20"
+                alt="logo"
+              ></Image>
               <div className="flex justify-between">
                 <ul className="flex text-white xs:gap-8 gap-4 cursor-pointer">
                   <li>About</li>

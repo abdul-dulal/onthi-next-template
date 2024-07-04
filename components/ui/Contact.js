@@ -32,7 +32,7 @@ const Contact = () => {
                 socialName="Dribble"
                 title="All designer can visit this regularly"
               />
-              <Image src={device} className="mt-16" alt="Smart device" />
+              <Image src={device} className="mt-16" alt="Smart device"></Image>
             </div>
             <div className="md:col-span-8 col-span-12 ">
               <ContactForm label="Name" type="text" />
