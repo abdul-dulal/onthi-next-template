@@ -6,7 +6,6 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import { SlSocialPintarest } from "react-icons/sl";
 
 import portfolio from "/public/img/Portfolio_Details.png";
 import Image from "next/image";
@@ -15,11 +14,15 @@ import Contact from "@/components/ui/Contact";
 import Footer from "@/components/ui/Footer";
 import Link from "next/link";
 import Service from "@/components/ui/Service";
-import digitalMarketing from "/public/img/digitalMarketing.png";
 import service2 from "/public/img/service2.png";
 import webDevelopment from "/public/img/web-development.png";
 import productDesign from "/public/img/product-design.png";
 const PoftfolioDetails = ({ params }) => {
+  const services = [
+    { id: 2, img: service2, title: "Brand identity" },
+    { id: 3, img: webDevelopment, title: "Web development" },
+    { id: 4, img: productDesign, title: "Brand identity" },
+  ];
   return (
     <div className="max-w-[1350px] md:h-[670px] xs:h-[450px] h-[400px] bg-[#181818] ">
       <div className="max-w-[1170px] mx-auto xl:pl-0 px-3">
@@ -27,9 +30,11 @@ const PoftfolioDetails = ({ params }) => {
           <h3 className="text-white">Omnis Stylious</h3>
           <p className="mt-7 xs:text-[#8ea0b1] text-white">
             At Canvas Agency we stand behind our artists. We want our artists to
-            reign supreme and achieve success in <br /> an environment that
-            fosters individuality while creating a secure space for them to
-            thrive under
+            reign supreme and achieve success in
+          </p>
+          <p className="mt-1 xs:text-[#8ea0b1] text-white">
+            an environment that fosters individuality while creating a secure
+            space for them to thrive under
           </p>
           <div className="my-14 w-8 h-8 bg-[#292929] rounded-full flex items-center justify-center shadow-md animate-bounce">
             <FaArrowDown color="white" />
@@ -46,18 +51,42 @@ const PoftfolioDetails = ({ params }) => {
               <h6 className="mt-5 text-[26px] font-bold text-black">Year</h6>
               <p className="text-primary">2024</p>
               <ul className="flex xs:justify-start justify-center  gap-4 mt-6">
-                <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#4661c5] rounded-full">
-                  <FaFacebookF color="white" />
-                </li>
-                <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#1da1f2] rounded-full">
-                  <FaTwitter color="white" />
-                </li>
-                <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#ff2e2e] rounded-full">
-                  <FaInstagram color="white" />
-                </li>
-                <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#0073b0] rounded-full">
-                  <FaLinkedinIn color="white" />
-                </li>
+                <Link
+                  href={"https://www.facebook.com/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#4661c5] rounded-full">
+                    <FaFacebookF color="white" />
+                  </li>
+                </Link>
+                <Link
+                  href={"https://x.com/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#1da1f2] rounded-full">
+                    <FaTwitter color="white" />
+                  </li>
+                </Link>
+                <Link
+                  href={"https://www.instagram.com/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#ff2e2e] rounded-full">
+                    <FaInstagram color="white" />
+                  </li>
+                </Link>
+                <Link
+                  href={"https://www.linkedin.com"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#0073b0] rounded-full">
+                    <FaLinkedinIn color="white" />
+                  </li>
+                </Link>
               </ul>
               <Link href="#">
                 <button className=" my-8 mt-8 xs:w-[200px] w-[190px] bg-[#3b71fe] text-[#1b1b1b]  h-[58px]   rounded text-lg font-bold">
@@ -124,9 +153,31 @@ const PoftfolioDetails = ({ params }) => {
           </h3>
         </div>
         <div className=" grid  md:grid-cols-3 xs:grid-cols-2 gap-8 mb-24">
-          <Service img={service2} title=" Brand identity" />
-          <Service img={webDevelopment} title="Web development" />
-          <Service img={productDesign} title=" Product design" />
+          {services.map((service) => {
+            return (
+              <Link
+                key={service.id}
+                class="relative group"
+                href={`/portfolio-details/${service.id}`}
+              >
+                <div class="image-container relative overflow-hidden">
+                  <Image
+                    src={service.img}
+                    alt={service.title}
+                    class="w-full rounded"
+                  ></Image>
+                  <div class="absolute  duration-500 opacity-0 group-hover:opacity-100 inset-0  bg-gradient-to-t from-white to-transparent p-8 ">
+                    <div class="hover-content absolute bottom-0 left-0 w-full p-8  ">
+                      <h6 class="mt-2 text-secondary">Branding</h6>
+                      <h6 class="text-[22px] font-bold text-primary">
+                        {service.title}
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
       <Contact />

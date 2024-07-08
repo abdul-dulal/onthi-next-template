@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import Creative from "@/components/ui/creative";
 import flower from "/public/img/flower.png";
 import Image from "next/image";
 import { MdEmail, MdOutlineCheckCircle } from "react-icons/md";
@@ -16,8 +15,6 @@ import best from "/public/img/best-award.png";
 import developer from "/public/img/developer-award.png";
 import award from "/public/img/w.png";
 import webby from "/public/img/webby.png";
-import marketing from "/public/img/digital-marketing.png";
-import brandIdentity from "/public/img/brand-indentity.png";
 import Button from "@/components/ui/Button";
 import Exprience from "@/components/ui/Exprience";
 import Award from "@/components/ui/Award";
@@ -33,20 +30,16 @@ import Link from "next/link";
 import Slider from "@/components/ui/Slider";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
-import blog1 from "/public/img/blog-post.png";
-import blog2 from "/public/img/blog-post2.png";
+
 import Contact from "@/components/ui/Contact";
 import Footer from "@/components/ui/Footer";
 import Service from "@/components/ui/Service";
-import digitalMarketing from "/public/img/digitalMarketing.png";
-import service2 from "/public/img/service2.png";
-import webDevelopment from "/public/img/web-development.png";
-import productDesign from "/public/img/product-design.png";
+import Blog from "@/components/ui/Blog";
 const Home = () => {
   const [counterOn, setCounteron] = useState(false);
   return (
     <div>
-      <section id="home">
+      <section>
         <div className="w-full bg-primary   md:bg-[url('/img/bg-main.png')] bg-none bg-no-repeat bg-right-bottom ">
           <div className="max-w-[1170px] mx-auto xl:0 px-3 xl:h-[830px] lg:h-[800px]  md:h-[580px] h-[420px]  md:grid grid-cols-12  gap-7">
             <div className=" col-span-5  ">
@@ -146,8 +139,7 @@ const Home = () => {
                 </h2>
                 <p className="text-[#8ea0b1] pb-4">
                   There are many variations of passages of Ipsum available,
-                  majority <br />
-                  have suffered.We put your ideas and thus your wishes
+                  majority have suffered.We put your ideas and thus your wishes
                 </p>
                 <div className="flex gap-2">
                   <Link href="#">
@@ -179,15 +171,12 @@ const Home = () => {
         <div className="grid lg:grid-cols-2 gap-7 max-w-[1170px] mx-auto xl:px-0 px-4 xl:my-[130px] my-24 ">
           <div className="">
             <h3 className="xl:text-left text-center ">
-              I run agency smartly with
-              <br /> my team members.
+              I run agency smartly with my team members.
             </h3>
             <p className="mt-8 text-[#767676] xl:text-left text-center">
-              Hi, my name is David Clacrk and I began using WordPress when{" "}
-              <br />
-              first began. I’ve spent most of my waking hours for the last ten{" "}
-              <br />
-              years designing, programming and operating
+              Hi, my name is David Clacrk and I began using WordPress when first
+              began. I’ve spent most of my waking hours for the last ten years
+              designing, programming and operating
             </p>
             <div className="xl:flex grid xs:grid-cols-2  xs:gap-7 gap-2 mt-8">
               <div className="flex flex-col gap-3  justify-center lg:items-start items-center  xl:w-[190px] w-full xl:h-[220px] lg:h-[250px] h-[218px] bg-[#f4f4f4] lg:pl-11">
@@ -248,7 +237,7 @@ const Home = () => {
             <div className="w-[150px] h-[150px] exprience absolute xl:left-10 lg:left-0 md:left-[45%] sm:left-[40%] xs:left-[20%] left-0 xl:top-9 lg:top-5 md:top-2">
               <Image src={exprience} alt="exprience" />
             </div>
-            <div className="card absolute lg:left-0 md:left-[24%] sm:left-[10%] left-0 xl:bottom-4 lg:bottom-0 bottom-0 z-10">
+            <div className="card absolute lg:left-0 md:left-[24%] sm:left-[10%] left-0 xl:bottom-4 lg:bottom-0 bottom-0 z-[1]">
               <Image src={laptop} alt="laptop" />
             </div>
             <div className=" h-[474px] w-[470px] bg-[#7ebbf2] rounded-t-[220px] bg-right bg-no-repeat flex justify-end">
@@ -353,14 +342,7 @@ const Home = () => {
             <h3 class="mt-4 mb-10 relative w-fit after:content-[''] after:absolute after:w-[170px] after:h-8 after:-right-14 after:top-6 after:bg-[url('/img/line.png')] after:bg-no-repeat after:bg-contain ">
               Check my services
             </h3>
-            <Project title="Digital" title1="marketing" hoverImg={marketing} />
-            <Project title="Brand" title1="identity" hoverImg={brandIdentity} />
-            <Project title="Web" title1="development" hoverImg={marketing} />
-            <Project
-              title="Product"
-              title1="designing"
-              hoverImg={brandIdentity}
-            />
+            <Project />
           </div>
         </div>
       </section>
@@ -370,16 +352,11 @@ const Home = () => {
         <div className="max-w-[1290px] w-full mx-auto xl:px-0 px-3 mt-16">
           <p className="text-center">My portfolio</p>
           <div className="flex justify-center w-full">
-            <h3 class="text-center mt-4 mb-10 relative w-fit after:content-[''] after:absolute after:w-[170px] after:h-8 after:-right-14 after:top-6 after:bg-[url('/img/line.png')] after:bg-no-repeat after:bg-contain ">
+            <h3 class="text-center mt-4 mb-10 relative w-fit after:content-[''] after:absolute after:w-[170px] after:h-8 after:-right-14 after:top-6 after:bg-[url('/img/line.png')] after:bg-no-repeat after:bg-contain  ">
               My latest project
             </h3>
           </div>
-          <div className=" grid lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 gap-8 mb-24">
-            <Service img={digitalMarketing} title=" Digital marketing" />
-            <Service img={service2} title=" Brand identity" />
-            <Service img={webDevelopment} title="Web development" />
-            <Service img={productDesign} title=" Product design" />
-          </div>
+          <Service />
         </div>
       </section>
 
@@ -400,32 +377,7 @@ const Home = () => {
         <div className="max-w-[1170px] mx-auto xl:px-0 px-3 mt-20">
           <p className="text-center">Blog & articles</p>
           <h3 className="text-center mb-10">Latest blog post</h3>
-          <div className="grid xs:grid-cols-2 gap-7  ">
-            <Link href="#" className="group">
-              <div className="">
-                <Image
-                  src={blog1}
-                  className=" group-hover:scale-95 duration-500 group-hover:rounded"
-                  alt="blog post"
-                />
-              </div>
-              <p>April 6. 2023 _ Website development</p>
-              <h3 className="md:text-[28px] sm:text-2xl xs:text-xl ">
-                A Fresh beginging of website
-              </h3>
-            </Link>
-            <Link href="#" className="group">
-              <Image
-                src={blog2}
-                className=" group-hover:scale-95 duration-500 group-hover:rounded"
-                alt="blog post"
-              />
-              <p>April 6. 2023 _ Website development</p>
-              <h3 className="md:text-[28px] sm:text-2xl xs:text-xl">
-                Mobil billing for digital goods
-              </h3>
-            </Link>
-          </div>
+          <Blog />
         </div>
       </section>
       {/* Footer-section */}

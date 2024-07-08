@@ -28,10 +28,6 @@ span {
 }
 
 /* header start--------------------------------------- */
-.brand {
-  transform: translateX(-100rem);
-  animation: slideIn 0.5s forwards;
-}
 
 nav ul li::after {
   content: "";

@@ -23,7 +23,6 @@ export default function App() {
       loop={true}
       lazy={true}
       autoplay={true}
-      className="mySwiper"
     >
       <SwiperSlide>
         <SliderContent slider={slider} />

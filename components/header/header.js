@@ -25,9 +25,9 @@ const Header = () => {
   }, []);
 
   const header =
-    "absolute after:content-[''] after:bottom-0 after:left-0  after:w-full after:h-[2px] after:origin-left	 after:scale-x-0 after:transition-all hover:after:scale-x-100";
+    "absolute after:content-[''] after:bottom-0 after:left-0  after:w-full after:h-[2px] after:origin-left	 after:scale-x-0 after:transition-all hover:after:scale-x-100 z-[9999]";
   return (
-    <header className={`header   ${isSticky ? "sticky" : ""}`}>
+    <header className={`header    ${isSticky ? "sticky z-[9999] top-0" : ""}`}>
       <div
         className={`bg-[#1c1c1c] h-[110px] ${
           isOpen ? "shadow-lg" : "drop-shadow-xl"
@@ -51,7 +51,7 @@ const Header = () => {
                   style={{ animationDelay: "0s" }}
                   className="hover:text-white duration-[.3s]"
                 >
-                  <Link href="#home">Home</Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li
                   style={{ animationDelay: ".5s" }}

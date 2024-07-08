@@ -7,12 +7,11 @@ import Contact from "@/components/ui/Contact";
 import Footer from "@/components/ui/Footer";
 import ServiceCounter from "@/components/ui/ServiceCounter";
 
-const ServiceDetails = ({ params }) => {
-  const { id } = params;
+const ServiceDetails = () => {
   return (
     <div>
       <div className="max-w-[1360px] relative bg-['url('/public/img/Service_Details.png')']">
-        <Image src={service} alt="Service-detail"></Image>
+        <Image src={service} alt="Service-detail" />
 
         <h3 className="text-white absolute left-[84px]  bottom-20">
           Service Details
@@ -55,14 +54,13 @@ const ServiceDetails = ({ params }) => {
             src={service1}
             className="rounded hover:scale-95 duration-500"
             alt="Service detail"
-          >
-            {" "}
-          </Image>
+          />
+
           <Image
             src={service2}
             className="rounded  hover:scale-95 duration-500"
             alt="Service detail"
-          ></Image>
+          />
         </div>
       </div>
       <Contact />
