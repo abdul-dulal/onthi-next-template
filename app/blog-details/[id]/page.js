@@ -10,7 +10,7 @@ import Footer from "@/components/ui/Footer";
 const BlogDetails = () => {
   return (
     <div>
-      {/* <div className="max-w-[1370px]  mx-auto">
+      <div className="max-w-[1370px]  mx-auto">
         <div className=" bg-[url('/img/blog-bg-cover.png')] w-full min-h-[500px] bg-no-repeat bg-center bg-cover">
           <div className="flex flex-col justify-center items-center  min-h-[500px] max-w-[1170px] mx-auto xl:px-0 px-3">
             <h3 className="">New design trends for the next year</h3>
@@ -22,9 +22,9 @@ const BlogDetails = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="max-w-[1170px] mx-auto xl:px-0 px-3">
+      <div className="max-w-[1170px] mx-auto xl:px-0 px-3">
         <h3 className="mt-24 mb-10">
           Had a great time with you, you did a great job and designed the tattoo
           in the way I wanted
@@ -81,7 +81,7 @@ const BlogDetails = () => {
         </p>
 
         <BlogQuote />
-      </div> */}
+      </div>
       <Contact />
       <Footer />
     </div>

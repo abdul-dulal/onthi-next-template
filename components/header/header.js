@@ -34,8 +34,8 @@ const Header = () => {
         }`}
       >
         <div className="xl:grid xl:grid-cols-12 flex justify-between gap-2 max-w-[1170px] mx-auto xl:px-0 px-4 h-full items-center z-[9999]">
-          <div className="col-span-2 brand">
-            <Link href={"/home"}>
+          <div className="col-span-2 ">
+            <Link href={"/"}>
               <Image
                 src={"/img/logo.png"}
                 width={152}

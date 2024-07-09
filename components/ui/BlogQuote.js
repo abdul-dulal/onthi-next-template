@@ -20,7 +20,7 @@ const BlogQuote = () => {
             : "          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi ullam ad tenetur. Doloribus iste consequatur  dolor magnam!"}
         </blockquote>
       </div>
-      <div className="flex gap-2 my-16">
+      <div className="xs:flex xs:gap-2   my-16">
         <button
           onClick={() => setQuote("adobe")}
           className={`font-semibold text-base border border-black text-black h-11 px-8 ${
@@ -31,7 +31,7 @@ const BlogQuote = () => {
         </button>
         <button
           onClick={() => setQuote("prototype")}
-          className={`font-semibold text-base border border-black text-black h-11 px-8 ${
+          className={`font-semibold xs:my-0 my-3 xs:ml-0 ml-4 text-base border border-black text-black h-11 px-8 ${
             quote == "prototype"
               ? "h-11 bg-secondary border border-secondary"
               : " "
@@ -40,7 +40,7 @@ const BlogQuote = () => {
           Prototype
         </button>
         <button
-          className={`font-semibold text-base border border-black text-black h-11 px-8 ${
+          className={`font-semibold xs:ml-0 ml-3 text-base border border-black text-black h-11 px-8 ${
             quote == "whims" ? "h-11 bg-secondary border border-secondary" : " "
           } `}
           onClick={() => setQuote("whims")}

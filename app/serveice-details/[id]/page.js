@@ -10,7 +10,7 @@ import ServiceCounter from "@/components/ui/ServiceCounter";
 const ServiceDetails = () => {
   return (
     <div>
-      <div className="max-w-[1360px] relative bg-['url('/public/img/Service_Details.png')']">
+      <div className="max-w-[1360px] relative bg-['url('/public/img/Service_Details.png')'] -z-[9999]">
         <Image src={service} alt="Service-detail" />
 
         <h3 className="text-white absolute left-[84px]  bottom-20">
