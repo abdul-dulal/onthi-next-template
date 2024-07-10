@@ -185,7 +185,7 @@ const Home = () => {
         <div className="grid lg:grid-cols-2 gap-7 max-w-[1170px] mx-auto xl:px-0 px-4 xl:my-[130px] my-24 ">
           <div className="">
             <h3
-              className="xl:text-left text-center aos-init "
+              className="xl:text-left text-center  "
               data-aos="fade-up"
               data-aos-duration="500"
             >
