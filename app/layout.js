@@ -17,7 +17,7 @@ const MyriadPro = localFont({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`  ${MyriadPro.className} ${syne.className} `}>
+    <html lang="en" className={`   ${syne.className} `}>
       <body>
         <Header />
         <div className="">{children}</div>
