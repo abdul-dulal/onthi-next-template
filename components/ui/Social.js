@@ -3,7 +3,12 @@ import React from "react";
 import twiter from "/public/img/twiter.png";
 const Social = ({ social, socialName, title }) => {
   return (
-    <div className="mt-12">
+    <div
+      className="mt-12"
+      data-aos="fade-right"
+      data-aos-duration="700"
+      data-aos-delay="300"
+    >
       <div className="flex items-center gap-7  ">
         <div>
           <Image src={social} alt="Twiter"></Image>

@@ -6,11 +6,23 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <div className="max-w-[1350px] w-full bg-[url('/img/footer-bg.png')] bg-no-repeat bg-contain bg-primary pt-20 pb-10 mt-20">
+        <div className="max-w-[1360px]  bg-[url('/img/footer-bg.png')] bg-no-repeat bg-contain bg-primary pt-20 pb-10 mt-20">
           <div className="max-w-[1170px] mx-auto xl:px-0 px-3">
-            <div className="xs:flex justify-between">
-              <h3 className="text-white xs:mb-0 mb-4">Let’s get in touch</h3>
-              <div className="flex ">
+            <div className="xs:flex justify-between pr-3">
+              <h3
+                className="text-white xs:mb-0 mb-4"
+                data-aos="fade-right"
+                data-aos-duration="700"
+                data-aos-delay="300"
+              >
+                Let’s get in touch
+              </h3>
+              <div
+                className="flex "
+                data-aos="fade-left"
+                data-aos-duration="700"
+                data-aos-delay="300"
+              >
                 <input
                   type="email"
                   className="lg:w-[370px] md:w-[300px] sm:w-[240px] xs:w-[200px] h-12 border border-white bg-transparent"
@@ -21,10 +33,18 @@ const Footer = () => {
               </div>
             </div>
             <div className="mt-20">
-              <h1 className="sm:text-[80px] xs:text-[50px] text-3xl text-secondary font-bold text-center">
+              <h1
+                className="sm:text-[80px] xs:text-[50px] text-3xl text-secondary font-bold text-center"
+                data-aos="fade-up"
+                data-aos-duration="600"
+              >
                 hello@onthi.com
               </h1>
-              <p className="text-center text-white text-xl xs:mt-8 mt-3">
+              <p
+                className="text-center text-white text-xl xs:mt-8 mt-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 nss.com established 2014 in Sordar para
               </p>
               <Image

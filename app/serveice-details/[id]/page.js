@@ -1,27 +1,38 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import service from "/public/img/Service_Details.png";
 import service1 from "/public/img/Service_Details-1.png";
 import service2 from "/public/img/Service_Details2.png";
 import Contact from "@/components/ui/Contact";
 import Footer from "@/components/ui/Footer";
 import ServiceCounter from "@/components/ui/ServiceCounter";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const ServiceDetails = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <div className="max-w-[1360px] relative bg-['url('/public/img/Service_Details.png')'] -z-[9999]">
         <Image src={service} alt="Service-detail" />
 
-        <h3 className="text-white absolute left-[84px]  bottom-20">
+        <h3
+          className="text-white absolute left-[84px]  bottom-20"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           Service Details
         </h3>
       </div>
       <div className="max-w-[1170px] mx-auto xl:px-0 px-3">
         <ServiceCounter />
 
-        <h3 className=" my-6">We launched porte template this week</h3>
-        <p className="mb-4">
+        <h3 className=" my-6" data-aos="fade-up" data-aos-duration="1100">
+          We launched porte template this week
+        </h3>
+        <p className="mb-4" data-aos="fade-up" data-aos-duration="1500">
           Minimalism combined with elements of french typography and brutalism
           helped us to realize the site exactly as we imagined with the client
           at the same beginning: visually restrained, but stylish. Informative
@@ -32,8 +43,14 @@ const ServiceDetails = () => {
           close collaboration. We are design agency to create something new
           template.
         </p>
-        <h6 className="text-lg font-bold mb-5">Web development</h6>
-        <p>
+        <h6
+          className="text-lg font-bold mb-5"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          Web development
+        </h6>
+        <p data-aos="fade-up" data-aos-duration="900">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
@@ -41,7 +58,7 @@ const ServiceDetails = () => {
           aut odit aut fugit, sed quia consequuntur magni dolores eos qui
           ratione voluptatem sequi nesciunt.
         </p>
-        <p className="my-11">
+        <p className="my-11" data-aos="fade-up" data-aos-duration="1200">
           Ellentesque sit amet odio nisi. Phasellus quis lorem leo. s, libero
           diam finibus tellus, at sagittis tellus eros vitae nisi. Sed dignissim
           augue sit amet diam laoreet venenatis. Aliquam bibendum erat eu nisi
@@ -54,12 +71,16 @@ const ServiceDetails = () => {
             src={service1}
             className="rounded hover:scale-95 duration-500"
             alt="Service detail"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           />
 
           <Image
             src={service2}
             className="rounded  hover:scale-95 duration-500"
             alt="Service detail"
+            data-aos="fade-left"
+            data-aos-duration="1000"
           />
         </div>
       </div>

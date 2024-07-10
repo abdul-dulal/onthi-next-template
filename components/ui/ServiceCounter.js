@@ -5,7 +5,7 @@ import ScrollTrigger from "react-scroll-trigger";
 const ServiceCounter = () => {
   const [counterOn, setCounteron] = useState(false);
   return (
-    <div className="my-14">
+    <div className="my-14" data-aos="fade-up" data-aos-duration="900">
       <ScrollTrigger
         onEnter={() => setCounteron(true)}
         onExit={() => setCounteron(false)}

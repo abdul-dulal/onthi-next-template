@@ -13,7 +13,7 @@ const Project = () => {
     { id: 4, title: "Product", title2: "designing", hoverImg: brandIdentity },
   ];
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1500">
       {projects.map((project) => {
         return (
           <Link key={project.id} href={`/serveice-details/${project.id}`}>

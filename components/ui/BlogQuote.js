@@ -6,7 +6,7 @@ const BlogQuote = () => {
   const [quote, setQuote] = useState("prototype");
 
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1500">
       <div>
         <div className="mx-auto h-[90px] w-[90px] bg-secondary rounded-full flex items-center justify-center my-6">
           <LuQuote size={36} />

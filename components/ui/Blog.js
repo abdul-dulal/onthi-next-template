@@ -9,7 +9,11 @@ const Blog = () => {
     { id: 2, title: "Mobil billing for digital goods", img: blog2 },
   ];
   return (
-    <div className="grid xs:grid-cols-2 gap-7  ">
+    <div
+      className="grid xs:grid-cols-2 gap-7  "
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       {blogs.map((blog) => {
         return (
           <Link

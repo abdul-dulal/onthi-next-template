@@ -14,7 +14,11 @@ const Service = () => {
     { id: 4, img: productDesign, title: "Brand identity" },
   ];
   return (
-    <div className=" grid lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 gap-8 mb-24">
+    <div
+      className=" grid lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 gap-8 mb-24"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       {services.map((service) => {
         return (
           <Link
