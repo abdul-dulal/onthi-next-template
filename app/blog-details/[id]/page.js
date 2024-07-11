@@ -7,13 +7,8 @@ import bloghero from "/public/img/blog-hero.png";
 import BlogQuote from "@/components/ui/BlogQuote";
 import Contact from "@/components/ui/Contact";
 import Footer from "@/components/ui/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
+
 const BlogDetails = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div>
       <div className="max-w-[1370px]  mx-auto">

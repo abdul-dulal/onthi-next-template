@@ -7,12 +7,8 @@ import service2 from "/public/img/Service_Details2.png";
 import Contact from "@/components/ui/Contact";
 import Footer from "@/components/ui/Footer";
 import ServiceCounter from "@/components/ui/ServiceCounter";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 const ServiceDetails = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div>
       <div className="max-w-[1360px] relative bg-['url('/public/img/Service_Details.png')'] -z-[9999]">

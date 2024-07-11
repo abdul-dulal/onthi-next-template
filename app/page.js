@@ -35,10 +35,7 @@ import Contact from "@/components/ui/Contact";
 import Footer from "@/components/ui/Footer";
 import Service from "@/components/ui/Service";
 import Blog from "@/components/ui/Blog";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
-AOS.init();
 const Home = () => {
   const [counterOn, setCounteron] = useState(false);
   return (

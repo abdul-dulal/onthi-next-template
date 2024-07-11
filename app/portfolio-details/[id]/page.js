@@ -18,13 +18,8 @@ import Service from "@/components/ui/Service";
 import service2 from "/public/img/service2.png";
 import webDevelopment from "/public/img/web-development.png";
 import productDesign from "/public/img/product-design.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const PoftfolioDetails = ({ params }) => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   const services = [
     { id: 2, img: service2, title: "Brand identity" },
     { id: 3, img: webDevelopment, title: "Web development" },
