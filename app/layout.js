@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className={`   ${syne.className} `}>
-      <title>Onthi</title>
+      <title>Onthi Personal Resume NextJs Template</title>
       <body>
         <div>
           <AnimatedCusor />
