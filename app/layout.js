@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Aos from "aos";
 import Loading from "@/components/ui/Loading";
+import AnimatedCusor from "@/components/ui/AnimatedCursor";
 const syne = Syne({
   weight: ["400", "500", "700"],
   style: ["normal"],
@@ -33,14 +34,17 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`   ${syne.className} `}>
       <title>Onthi</title>
       <body>
-        {isloading ? (
-          <Loading />
-        ) : (
-          <div>
-            <Header />
-            <div className="">{children}</div>
-          </div>
-        )}
+        <div>
+          <AnimatedCusor />
+          {isloading ? (
+            <Loading />
+          ) : (
+            <div>
+              <Header />
+              <div className="">{children}</div>
+            </div>
+          )}
+        </div>
       </body>
     </html>
   );

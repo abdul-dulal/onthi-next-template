@@ -23,7 +23,7 @@ import Marquee from "react-fast-marquee";
 import designer from "/public/img/desinger.png";
 import { FaAnglesRight } from "react-icons/fa6";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import arrow from "@/public/img/highlight.png";
 import singtunare from "@/public/img/signature.png";
 import Link from "next/link";
@@ -35,6 +35,7 @@ import Contact from "@/components/ui/Contact";
 import Footer from "@/components/ui/Footer";
 import Service from "@/components/ui/Service";
 import Blog from "@/components/ui/Blog";
+import AnimatedCusor from "@/components/ui/AnimatedCursor";
 
 const Home = () => {
   const [counterOn, setCounteron] = useState(false);
@@ -137,11 +138,16 @@ const Home = () => {
             <div className=" md:col-span-6 w-full h-full md:px-0 px-3   flex items-center ">
               <div>
                 <div className="flex items-center justify-between">
-                  <p className="text-[#7ebbf2]">Hey ! I am Vapez miller</p>
+                  <p className="text-[#7ebbf2] ">
+                    <span className="text-white text-3xl mr-2 font-extrabold">
+                      |
+                    </span>{" "}
+                    Hey ! I am Vapez miller
+                  </p>
                   <Image src={arrow} className="topbar-shape" alt="" />
                 </div>
                 <h2
-                  className="xl:text-7xl lg:text-[55px] md:text-[48px] xs:text-5xl text-3xl  xl:leading-[80px] lg:leading-[60px] xs:leading-[50px] text-white tracking-[-2px] font-bold pb-4"
+                  className="xl:text-7xl lg:text-[55px] md:text-[48px] xs:text-5xl text-3xl  xl:leading-[80px] lg:leading-[60px] xs:leading-[50px] text-white tracking-[-2px] font-bold pb-1 -z-[9999]"
                   data-aos="fade-up"
                   data-aos-duration="1500"
                 >
@@ -154,7 +160,7 @@ const Home = () => {
                 </p>
                 <div className="flex gap-2">
                   <Link href="#">
-                    <h6 className="flex items-center gap-2 xl:px-9 lg:px-7 xs:px-5  px-3 xl:py-5 lg:py-4 py-3 xs:text-lg text-base text-white text-[ #1b1b1b] font-bold  hover:bg-[#7dbbf1] hover:text-black duration-1000 rounded">
+                    <h6 className="flex items-center gap-2 xl:px-9 lg:px-7 xs:px-5  px-3 xl:py-5 lg:py-4 py-3 xs:text-lg text-base  font-bold  bg-[#7dbbf1] text-black duration-1000 rounded">
                       About Me
                       <span className="">
                         <FaAnglesRight />
@@ -432,7 +438,7 @@ const Home = () => {
       <section id="review">
         <div className="max-w-full bg-black bg-opacity-95 py-[100px] bg-[url('/img/slider-bg.png')]  bg-cover">
           <div
-            className="max-w-[1030px]  mx-auto xl:px-0 px-3"
+            className="max-w-[1030px]  mx-auto xl:px-0 px-3 py-2"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="300"

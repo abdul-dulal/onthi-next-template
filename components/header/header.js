@@ -47,40 +47,22 @@ const Header = () => {
           <div className="  col-span-8 pl-[70px]">
             <nav className="">
               <ul className=" xl:flex hidden gap-[55px]   text-[#8ea0b1] font-medium text-base">
-                <li
-                  style={{ animationDelay: "0s" }}
-                  className="hover:text-white duration-[.3s]"
-                >
+                <li className="hover:text-white duration-[.3s] navlist">
                   <Link href="/">Home</Link>
                 </li>
-                <li
-                  style={{ animationDelay: ".5s" }}
-                  className="hover:text-white duration-[.3s]"
-                >
+                <li className="hover:text-white duration-[.3s] navlist">
                   <Link href="#about">About Me</Link>
                 </li>
-                <li
-                  style={{ animationDelay: "1s" }}
-                  className="hover:text-white duration-[.3s]"
-                >
+                <li className="hover:text-white duration-[.3s] navlist">
                   <Link href="#service">Services</Link>
                 </li>
-                <li
-                  style={{ animationDelay: "1.5s" }}
-                  className="hover:text-white duration-[.3s]"
-                >
+                <li className="hover:text-white duration-[.3s] navlist">
                   <Link href="#portfolio">Portfolio</Link>
                 </li>
-                <li
-                  style={{ animationDelay: "2s" }}
-                  className="hover:text-white duration-[.3s]"
-                >
+                <li className="hover:text-white duration-[.3s] navlist">
                   <Link href="#review">Reviews</Link>
                 </li>
-                <li
-                  style={{ animationDelay: "2.5s" }}
-                  className="hover:text-white duration-[.3s]"
-                >
+                <li className="hover:text-white duration-[.3s] navlist">
                   <Link href="#blog">Blog</Link>
                 </li>
               </ul>

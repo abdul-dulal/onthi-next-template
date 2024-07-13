@@ -11,7 +11,7 @@ const ServiceCounter = () => {
         onExit={() => setCounteron(false)}
       >
         {counterOn && (
-          <div className="flex flex-wrap items-center xs:gap-0 gap-10 justify-evenly">
+          <div className="flex flex-wrap items-center xs:gap-0 gap-10 justify-evenly -z-40">
             <CounterUp end="25" title="Project completed" text="k" />
             <CounterUp end="10" title="Years experience" text="+" />
             <CounterUp end="26" title="Award achievement" text="+" />

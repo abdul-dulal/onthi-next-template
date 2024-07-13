@@ -53,177 +53,183 @@ const PoftfolioDetails = ({ params }) => {
             space for them to thrive under
           </p>
           <div className="my-14 w-8 h-8 bg-[#292929] rounded-full flex items-center justify-center shadow-md animate-bounce">
-            <FaArrowDown color="white" />
+            <Link href="#details">
+              <FaArrowDown color="white" />
+            </Link>
           </div>
           <Image
+            id="details"
             src={portfolio}
             alt="Portfolio_Details"
             data-aos="fade-up"
             data-aos-duration="600"
           ></Image>
         </div>
-        <div className="xs:grid grid-cols-12 gap-7 mt-14">
-          <div className="xs:col-span-4 flex-1 xs:text-left text-center">
-            <div>
-              <h6
-                className="text-[26px] font-bold text-black"
-                data-aos="fade-up"
-                data-aos-duration="600"
-              >
-                Client
-              </h6>
+        <section>
+          <div className="xs:grid grid-cols-12 gap-7 mt-14">
+            <div className="xs:col-span-4 flex-1 xs:text-left text-center">
+              <div>
+                <h6
+                  className="text-[26px] font-bold text-black"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                >
+                  Client
+                </h6>
+                <p
+                  className="text-primary"
+                  data-aos="fade-up"
+                  data-aos-duration="700"
+                >
+                  Saiful Islam
+                </p>
+                <h6
+                  className="mt-5 text-[26px] font-bold text-black"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                >
+                  Client
+                </h6>
+                <p
+                  className="text-primary"
+                  data-aos="fade-up"
+                  data-aos-duration="900"
+                >
+                  Wed deveopment, Design
+                </p>
+                <h6
+                  className="mt-5 text-[26px] font-bold text-black"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  Year
+                </h6>
+                <p
+                  className="text-primary"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
+                  2024
+                </p>
+                <ul
+                  className="flex xs:justify-start justify-center  gap-4 mt-6"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  <Link
+                    href={"https://www.facebook.com/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#4661c5] rounded-full">
+                      <FaFacebookF color="white" />
+                    </li>
+                  </Link>
+                  <Link
+                    href={"https://x.com/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#1da1f2] rounded-full">
+                      <FaTwitter color="white" />
+                    </li>
+                  </Link>
+                  <Link
+                    href={"https://www.instagram.com/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#ff2e2e] rounded-full">
+                      <FaInstagram color="white" />
+                    </li>
+                  </Link>
+                  <Link
+                    href={"https://www.linkedin.com"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#0073b0] rounded-full">
+                      <FaLinkedinIn color="white" />
+                    </li>
+                  </Link>
+                </ul>
+                <Link href="#" data-aos="fade-up" data-aos-duration="1500">
+                  <button className=" my-8 mt-8 xs:w-[200px] w-[190px] bg-[#3b71fe] text-[#1b1b1b]  h-[58px]   rounded text-lg font-bold">
+                    Visit more
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="xs:col-span-8 flex-1">
+              <h3 data-aos="fade-up" data-aos-duration="600">
+                Event Presentation
+              </h3>
               <p
-                className="text-primary"
+                className="text-secondary mb-4"
                 data-aos="fade-up"
                 data-aos-duration="700"
               >
-                Saiful Islam
+                Sed ut perspiciatis unde omnis iste natus error <br />
+                sit voluptatem accusantium.
               </p>
               <h6
-                className="mt-5 text-[26px] font-bold text-black"
+                className="text-[24px] font-bold mb-5"
                 data-aos="fade-up"
                 data-aos-duration="800"
               >
-                Client
+                The Process
               </h6>
-              <p
-                className="text-primary"
-                data-aos="fade-up"
-                data-aos-duration="900"
-              >
-                Wed deveopment, Design
+              <p data-aos="fade-up" data-aos-duration="900">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
+              </p>
+              <p className="my-7" data-aos="fade-up" data-aos-duration="1000">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt.
+              </p>
+              <p data-aos="fade-up" data-aos-duration="1100">
+                Ellentesque sit amet odio nisi. Phasellus quis lorem leo. s,
+                libero diam finibus tellus, at sagittis tellus eros vitae nisi.
+                Sed dignissim augue sit amet diam laoreet venenatis. Aliquam
+                bibendum erat eu nisi faucibus dignissim. Phasellus dignissim
+                est tempor eros pulvinar luctus. Nam vulputate, risus a
+                efficitur cursus, felis dolor vulputate mi, ac eleifend libero
+                velit sed nunc.
               </p>
               <h6
-                className="mt-5 text-[26px] font-bold text-black"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                Year
-              </h6>
-              <p
-                className="text-primary"
-                data-aos="fade-up"
-                data-aos-duration="1100"
-              >
-                2024
-              </p>
-              <ul
-                className="flex xs:justify-start justify-center  gap-4 mt-6"
+                className="text-[24px] font-bold mb-5"
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
-                <Link
-                  href={"https://www.facebook.com/"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#4661c5] rounded-full">
-                    <FaFacebookF color="white" />
-                  </li>
-                </Link>
-                <Link
-                  href={"https://x.com/"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#1da1f2] rounded-full">
-                    <FaTwitter color="white" />
-                  </li>
-                </Link>
-                <Link
-                  href={"https://www.instagram.com/"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#ff2e2e] rounded-full">
-                    <FaInstagram color="white" />
-                  </li>
-                </Link>
-                <Link
-                  href={"https://www.linkedin.com"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <li className="flex items-center justify-center cursor-pointer h-[38px] w-[38px] bg-[#0073b0] rounded-full">
-                    <FaLinkedinIn color="white" />
-                  </li>
-                </Link>
-              </ul>
-              <Link href="#" data-aos="fade-up" data-aos-duration="1500">
-                <button className=" my-8 mt-8 xs:w-[200px] w-[190px] bg-[#3b71fe] text-[#1b1b1b]  h-[58px]   rounded text-lg font-bold">
-                  Visit more
-                </button>
-              </Link>
+                The Result
+              </h6>
+              <p data-aos="fade-up" data-aos-duration="1300">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
+              </p>
+              <p className="my-7" data-aos="fade-up" data-aos-duration="1300">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt.
+              </p>
+              <p data-aos="fade-up" data-aos-duration="1400">
+                Ellentesque sit amet odio nisi. Phasellus quis lorem leo. s,
+                libero diam finibus tellus, at sagittis tellus eros vitae nisi.
+                Sed dignissim augue sit amet diam laoreet venenatis. Aliquam
+                bibendum erat eu nisi faucibus dignissim. Phasellus dignissim
+                est tempor eros pulvinar luctus. Nam vulputate, risus a
+                efficitur cursus, felis dolor vulputate mi, ac eleifend libero
+                velit sed nunc.
+              </p>
             </div>
           </div>
-          <div className="xs:col-span-8 flex-1">
-            <h3 data-aos="fade-up" data-aos-duration="600">
-              Event Presentation
-            </h3>
-            <p
-              className="text-secondary mb-4"
-              data-aos="fade-up"
-              data-aos-duration="700"
-            >
-              Sed ut perspiciatis unde omnis iste natus error <br />
-              sit voluptatem accusantium.
-            </p>
-            <h6
-              className="text-[24px] font-bold mb-5"
-              data-aos="fade-up"
-              data-aos-duration="800"
-            >
-              The Process
-            </h6>
-            <p data-aos="fade-up" data-aos-duration="900">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
-            </p>
-            <p className="my-7" data-aos="fade-up" data-aos-duration="1000">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt.
-            </p>
-            <p data-aos="fade-up" data-aos-duration="1100">
-              Ellentesque sit amet odio nisi. Phasellus quis lorem leo. s,
-              libero diam finibus tellus, at sagittis tellus eros vitae nisi.
-              Sed dignissim augue sit amet diam laoreet venenatis. Aliquam
-              bibendum erat eu nisi faucibus dignissim. Phasellus dignissim est
-              tempor eros pulvinar luctus. Nam vulputate, risus a efficitur
-              cursus, felis dolor vulputate mi, ac eleifend libero velit sed
-              nunc.
-            </p>
-            <h6
-              className="text-[24px] font-bold mb-5"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              The Result
-            </h6>
-            <p data-aos="fade-up" data-aos-duration="1300">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
-            </p>
-            <p className="my-7" data-aos="fade-up" data-aos-duration="1300">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt.
-            </p>
-            <p data-aos="fade-up" data-aos-duration="1400">
-              Ellentesque sit amet odio nisi. Phasellus quis lorem leo. s,
-              libero diam finibus tellus, at sagittis tellus eros vitae nisi.
-              Sed dignissim augue sit amet diam laoreet venenatis. Aliquam
-              bibendum erat eu nisi faucibus dignissim. Phasellus dignissim est
-              tempor eros pulvinar luctus. Nam vulputate, risus a efficitur
-              cursus, felis dolor vulputate mi, ac eleifend libero velit sed
-              nunc.
-            </p>
-          </div>
-        </div>
+        </section>
       </div>
       <div className="max-w-[1170px] w-full mx-auto xl:px-0 px-3 mt-16">
         <div className="flex justify-center w-full">

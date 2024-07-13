@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 const Drawer = ({ isOpen, setIsOpen }) => {
   return (
-    <div className="xl:hidden relative ">
+    <div className="xl:hidden relative z-[9999]">
       <Hamburger
         toggled={isOpen}
         color="white"

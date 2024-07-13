@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/swiper-bundle.css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -22,7 +23,10 @@ export default function App() {
       modules={[Pagination, Autoplay]}
       loop={true}
       lazy={true}
-      autoplay={true}
+      autoplay={{
+        disableOnInteraction: false,
+      }}
+      speed={1000}
     >
       <SwiperSlide>
         <SliderContent slider={slider} />

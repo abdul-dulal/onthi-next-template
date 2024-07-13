@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+
 import service from "/public/img/Service_Details.png";
 import service1 from "/public/img/Service_Details-1.png";
 import service2 from "/public/img/Service_Details2.png";
@@ -62,21 +62,21 @@ const ServiceDetails = () => {
           luctus. Nam vulputate, risus a efficitur cursus, felis dolor vulputate
           mi, ac eleifend libero velit sed nunc.
         </p>
-        <div className="grid xs:grid-cols-2 gap-7 mb-20">
+        <div
+          className="grid xs:grid-cols-2 gap-7 mb-20"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <Image
             src={service1}
             className="rounded hover:scale-95 duration-500"
             alt="Service detail"
-            data-aos="fade-right"
-            data-aos-duration="1000"
           />
 
           <Image
             src={service2}
             className="rounded  hover:scale-95 duration-500"
             alt="Service detail"
-            data-aos="fade-left"
-            data-aos-duration="1000"
           />
         </div>
       </div>
